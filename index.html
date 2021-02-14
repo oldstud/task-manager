@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+        </tr>
+        <tr id="ten">
+            <td>10:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="eleven">
+            <td>11:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="twelve">
+            <td>12:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="one">
+            <td>13:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="two">
+            <td>14:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="three">
+            <td>15:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="four">
+            <td>16:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="five">
+            <td>17:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+        <tr id="six">
+            <td>18:00</td>
+            <td class="monday"></td>
+            <td class="tuesday"></td>
+            <td class="wednesday"></td>
+            <td class="thursday"></td>
+            <td class="friday"></td>
+        </tr>
+    </table>
+    <button type="button" id="btn_new_event">New event</button>
+    <select name="participiants" id="participiants">
+        <option value="state">All</option>
+        <option value="Dima">Dima</option>
+        <option value="Ira">Ira</option>
+        <option value="Cat">Cat</option>
+    </select>
+    <div id="modal_wrapper">
+        <div id="modal_window">
+            <div id="close_modal">&#10060;</div>
+            <input type="text" id="event_name" name="event_name">
+            <select name="day" id="select_day">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+            </select>
+            <select name="time" id="select_time">
+                <option value="ten">10:00</option>
+                <option value="eleven">11:00</option>
+                <option value="twelve">12:00</option>
+                <option value="one">13:00</option>
+                <option value="two">14:00</option>
+                <option value="three">15:00</option>
+                <option value="four">16:00</option>
+                <option value="five">17:00</option>
+                <option value="six">18:00</option>
+
+            </select>
+            <select name="participiants" id="select_participiants">
+                <option value="Dima">Dima</option>
+                <option value="Ira">Ira</option>
+                <option value="Cat">Cat</option>
+                <option value="Dima,Ira,Cat">Dima,Ira,Cat</option>
+                <option value="Dima,Ira">Dima,Ira</option>
+                <option value="Dima,Cat">Dima,Cat</option>
+                <option value="Ira,Cat">Ira,Cat</option>
+
+            </select>
+            <button id="btn_create_event" type="button">Create</button>
+        </div>
+
+    </div>
+
+    <div id="wrapper_modalYorN">
+        <div id="modalYorN">
+            <span>A you sure??</span>
+            <div class="YoNbtns">
+                <button id="modalYes">YES</button>
+                <button id="modalNo">NO</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
