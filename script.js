@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         state.forEach(element => {
 
             let searchElement = document.querySelector(`#${element.eventTime}>.${element.eventDay}`);
-            searchElement.style.backgroundColor = "green";
+            searchElement.style.backgroundColor = "rgba(35, 203, 167, 0.8)";
             let btnRemove = document.createElement('button');
             btnRemove.classList = "removeEvent";
             btnRemove.innerHTML = "X";

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,13 +14,13 @@
 <body>
 
     <table>
-        <tr>
-            <td>Name</td>
-            <td>Mon</td>
-            <td>Tue</td>
-            <td>Wed</td>
-            <td>Thu</td>
-            <td>Fri</td>
+        <tr class="styleArticle">
+            <td>&#x23F0;</td>
+            <td>Monday</td>
+            <td>Tuesday</td>
+            <td>Wednesday</td>
+            <td>Thursday</td>
+            <td>Friday</td>
         </tr>
         <tr id="ten">
             <td>10:00</td>
@@ -103,7 +105,9 @@
     <div id="modal_wrapper">
         <div id="modal_window">
             <div id="close_modal">&#10060;</div>
+            <p>Event name:</p>
             <input type="text" id="event_name" name="event_name">
+            <p>Choose the day:</p>
             <select name="day" id="select_day">
                 <option value="monday">Monday</option>
                 <option value="tuesday">Tuesday</option>
@@ -111,6 +115,7 @@
                 <option value="thursday">Thursday</option>
                 <option value="friday">Friday</option>
             </select>
+            <p>Choose the time:</p>
             <select name="time" id="select_time">
                 <option value="ten">10:00</option>
                 <option value="eleven">11:00</option>
@@ -123,6 +128,7 @@
                 <option value="six">18:00</option>
 
             </select>
+            <p>Invited to participate:</p>
             <select name="participiants" id="select_participiants">
                 <option value="Dima">Dima</option>
                 <option value="Ira">Ira</option>
@@ -133,7 +139,7 @@
                 <option value="Ira,Cat">Ira,Cat</option>
 
             </select>
-            <button id="btn_create_event" type="button">Create</button>
+            <button id="btn_create_event" type="button">Create Event</button>
         </div>
 
     </div>

@@ -2,12 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+html{
+    height: 100vh;
 }
 body{
     position: relative;
+    background-color:rgba(35, 203, 167, 0.2);  ;
+    height: 100vh;
 }
 table{
     margin: 0 auto;
+   padding-top: 50px;
 }
 td{
     width: 100px;
@@ -30,6 +37,7 @@ display: none;
     background-color: #dddddd;
     display: flex;
     flex-direction: column;
+    border:5px solid #fefefe;
 }
 #modal_window div:first-child{
     width: 30px;
@@ -37,7 +45,7 @@ display: none;
     cursor: pointer;
 }
 .active{
-    background-color:green;
+    background-color:rgba(35, 203, 167, 0.8);
 
       
 }
@@ -70,6 +78,35 @@ background: rgba(0, 0, 0, 0.9);
 
 }
 
+.styleArticle{
+    text-align: center;
+    background-color: #000000;
+    color: #dddddd;
+}
+td:first-child{
+    background-color: #cccc;
+    font-size: large;
+    text-align: center;
+}
 
+#btn_new_event,#btn_create_event{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+}
+#participiants{
+    width: 200px;
+  display: block;
+    margin: 0 auto;
+}
+
+p{
+    margin:10px 0 2px 10px;
+}
+
+.YoNbtns button{
+width: 100px;
+}
 
 
